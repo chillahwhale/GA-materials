@@ -1,4 +1,4 @@
-# Week 1, Tuesday
+# Week 1, Tuesday 3/17
 
 ## Schedule
 | Time (MST)                  | Event                             | Zoom Link                                    |
