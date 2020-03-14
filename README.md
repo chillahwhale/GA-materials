@@ -5,7 +5,7 @@ A place for Denver-specific course information and local flex time activities.
 - [Course Info](https://git.generalassemb.ly/DSI-US-11/course-info) - DSI course outline and schedule
 - [Google Classroom](https://classroom.google.com) - Assignments & feedback
 - [Quiz Reviews](./Quiz_Reviews) - Quiz reviews to study
-- [Slack](ga-students.slack.com) - We use Slack as the main form of communication in this course. Make sure you are part of the following channels:  
+- [Slack](https://ga-students.slack.com) - We use Slack as the main form of communication in this course. Make sure you are part of the following channels:  
   - #dsi-cc11-wc: Used for global lessons  
   - #dsi-cc11-den: Used for local lessons and class communication  
 
