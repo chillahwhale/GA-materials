@@ -8,6 +8,7 @@ A place for Denver-specific course information and local flex time activities.
 - [Slack](https://ga-students.slack.com) - We use Slack as the main form of communication in this course. Make sure you are part of the following channels:  
   - #dsi-cc11-wc: Used for global lessons  
   - #dsi-cc11-den: Used for local lessons and class communication  
+  - #dsi-cc11-resources: A place to share helpful resources throughout the course  
 
 ## Table of Contents
 *Note: materials will be updated as the course progresses*  
