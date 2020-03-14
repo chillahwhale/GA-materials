@@ -10,7 +10,7 @@ A place for Denver-specific course information and local flex time activities.
   - #dsi-cc11-den: Used for local lessons and class communication  
 
 ## Table of Contents
-*Note: materials will be updated as the course progresses**  
+*Note: materials will be updated as the course progresses*  
 - [Week 1](./Week_01) - Week 1 Materials
 - [Week 2](./Week_02) - Week 2 Materials
 - [Week 3](./Week_03) - Week 3 Materials
