@@ -2,6 +2,8 @@
 A place for Denver-specific course information and local flex time activities.
 
 ## Useful Links
+- [Local Zoom Link](https://generalassembly.zoom.us/j/4539501986) - Zoom room for local lessons
+- [Global Zoom Link](https://generalassembly.zoom.us/j/860658072) - Zoom room for global lessons
 - [Course Info](https://git.generalassemb.ly/DSI-US-11/course-info) - DSI course outline and schedule
 - [Google Classroom](https://classroom.google.com) - Assignments & feedback
 - [Quiz Reviews](./Quiz_Reviews) - Quiz reviews to study
@@ -39,6 +41,11 @@ Thursdays 2:00pm-4:00pm
 
 Contact **Kimberly English** in person or on slack to book a scheduled one-on-one.
 
+## Need Help?
+1. Google it!
+2. Ask a peer or the group chat
+3. Ask your instructor
+
 ## Course Wiki
 [This wiki](https://git.generalassemb.ly/DSI-US-11/course-info/wiki) has a lot of useful info! 
 
@@ -47,3 +54,6 @@ Contact **Kimberly English** in person or on slack to book a scheduled one-on-on
 
 ## Weekly Calendar
 [Google Calendar for Denver Campus](https://calendar.google.com/calendar/b/4?cid=Z2VuZXJhbGFzc2VtYi5seV84NmIyNzlpYW5zNmNwazFlZWJyNWVzMGdkY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t) - this calendar will be updated as we progress. Feel free to subscribe to this calendar so you're up-to-date with lessons, activities, etc.
+
+## Warm-Up Coding Challenges
+Credit to some of the coding challenges goes to [Erin Allard](https://github.com/allardbrain).
