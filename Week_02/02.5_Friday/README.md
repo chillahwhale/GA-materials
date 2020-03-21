@@ -13,5 +13,5 @@
 - Understand the importance of ethics in Data Science
 - Demonstrate your understanding of exploratory data analysis on your Project 1 presentation
 
-## Due by 1:00pm
-- Project 1
+## Due
+- Project 1 (Presentation due by 1:00pm, GitHub repo due by 11:59pm)
