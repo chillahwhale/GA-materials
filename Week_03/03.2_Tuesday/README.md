@@ -1,4 +1,4 @@
-# Week 3, Monday 3/31
+# Week 3, Tuesday 3/31
 
 ## Schedule
 | Time (MST)                  | Event                             | Zoom Link                                    |
