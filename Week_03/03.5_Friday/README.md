@@ -8,7 +8,7 @@
 | 12:00pm - 1:00pm | Lunch                       | N/A |
 | 1:00pm - 2:00pm  | Quiz 2 | [Local Room](https://generalassembly.zoom.us/j/4539501986)   |
 | 2:00pm - 4:00pm  | Local Lesson | [Local Room](https://generalassembly.zoom.us/j/4539501986)   |
-| 4:00pm - 5:00pm  | Happy Hour! | [Local Room](https://generalassembly.zoom.us/j/4539501986)  |
+| 4:00pm - 5:00pm  | Happy Hour! | [Denver Room](https://generalassembly.zoom.us/j/9088705189)  |
 
 ## Daily Learning Objectives
 - Understand the best way to model by understanding model workflow.
