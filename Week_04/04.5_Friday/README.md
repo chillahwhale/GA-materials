@@ -8,7 +8,7 @@
 | 12:00pm - 1:00pm | Lunch | N/A |
 | 1:00pm - 2:30pm | Guest Speaker: Emma Grimes on EDA & Data Visualization | [Guest Speaker Room](https://generalassembly.zoom.us/j/7556634699) |  
 | 2:30pm - 4:00pm  | Local Lesson: Technical Practice | [Local Room](https://generalassembly.zoom.us/j/4539501986) |
-| 4:00pm - 5:00pm  | Happy Hour! | [Local Room](https://generalassembly.zoom.us/j/4539501986)  |
+| 4:00pm - 5:00pm  | Happy Hour! | [Denver Room](https://generalassembly.zoom.us/j/9088705189)  |
 
 ## Daily Learning Objectives
 - Demonstrate your understanding of regression on project 2.
