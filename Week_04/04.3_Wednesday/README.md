@@ -6,7 +6,7 @@
 | 9:00am - 10:00am | Warm-Up                 | [Local Room](https://generalassembly.zoom.us/j/4539501986) |
 | 10:00am - 12:00pm | Global Lesson: Regularization | [WC Room](https://generalassembly.zoom.us/s/620270527)   |
 | 12:00pm - 1:00pm | Lunch                       | N/A |
-| 1:00pm - 3:00pm  | Local Lesson: Model Evaluation | [Local Room](https://generalassembly.zoom.us/j/4539501986)   |
+| 1:00pm - 3:00pm  | Local Lesson: Model Evaluation ([Recording](https://generalassembly.zoom.us/rec/share/-c1Lc-nyq05IZ53By12DQ_EnPd78aaa8hnIZrqVfy0aJmtv5NySQXswSV3XOla75)) | [Local Room](https://generalassembly.zoom.us/j/4539501986)   |
 | 3:00pm - 5:00pm  | Project 2 Work Time | Optional [Local Room](https://generalassembly.zoom.us/j/4539501986)  |
 
 ## Daily Learning Objectives
