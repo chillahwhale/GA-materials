@@ -2,8 +2,8 @@
 A place for Denver-specific course information and local flex time activities.
 
 ## Useful Links
-- [Local Zoom Link](https://generalassembly.zoom.us/j/4539501986) - Zoom room for local lessons
-- [Global Zoom Link](https://generalassembly.zoom.us/j/860658072) - Zoom room for global lessons
+- [Local Zoom Link](https://generalassembly.zoom.us/j/4539501986?pwd=NVZoQ2s1NXRZckVoc0RkQ2NTbCs1Zz09) - Zoom room for local lessons
+- [Global Zoom Link](https://generalassembly.zoom.us/s/620270527) - Zoom room for global lessons
 - [Course Info](https://git.generalassemb.ly/DSI-US-11/course-info) - DSI course outline and schedule
 - [Google Classroom](https://classroom.google.com) - Assignments & feedback
 - [Quiz Reviews](./Quiz_Reviews) - Quiz reviews to study
