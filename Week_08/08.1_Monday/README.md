@@ -12,7 +12,7 @@
 ## Daily Learning Objectives
 - Explain how the kMeans algorithm works and use it for clustering.
 - Review multiple supervised learning models by eplaining how they work to others.
-- Explain how the kMeans algorithm works and use it for clustering.
+- Explain how the DBSCAN algorithm works and use it for clustering.
 
 ## Due by End of Day
 - Lab 7.01: SQL
