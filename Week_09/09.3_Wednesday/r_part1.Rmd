@@ -1,0 +1,115 @@
+---
+title: "R Lesson Part 1"
+author: "Noelle Brown"
+output: html_document
+---
+# Intro to R
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Reading in Data
+
+Read in the `train_titanic.csv` file.
+```{r}
+titanic <- read.csv('~/your/path/data/train_titanic.csv')
+head(titanic)
+```
+
+## EDA
+
+How many rows and columns are in this dataset?
+```{r}
+
+```
+
+View just the first 10 items in the Age column.
+```{r}
+
+```
+
+How many missing values are there?
+```{r}
+
+```
+
+Plot a histogram to see the distribution of the Fare column.
+```{r}
+
+```
+
+Plot a scatterplot of the Fare vs. Age columns.
+```{r}
+
+```
+
+Display summary statistics of the titanic data.
+```{r}
+
+```
+
+How many females and males were aboard the Titanic? Plot the
+frequency of females and males. Be sure to give an accurate title and label the axes.
+```{r}
+
+```
+
+Use one apply function to output the means of Age, Fare, and Survival. Make sure the output is a real number for all three means.
+```{r}
+
+```
+
+Display the column names of the titanic dataframe.
+```{r}
+
+```
+
+Display the last 5 rows of the titanic dataframe.
+```{r}
+
+```
+
+
+Function Building: Imagine you have another dataset with the same column names, so you want to create a helper function that you can analyze this dataset and the next. 
+ - Create objects for the median Age and the minimum and maximum fares. Make sure to ignore missing values.
+- Create a dataframe called report that consists of the above values.
+- Change the column names of this dataframe to MedianAge, MinFare, and
+MaxFare
+- Round the results to 2 digits.
+- Finally, run the function on the titanic data to show the output.
+```{r}
+
+```
+
+## Modeling
+
+Remove unnecessary columns.
+```{r}
+
+```
+
+One-Hot Encode Sex and Embarked columns.
+```{r}
+
+```
+
+Split into training & testing sets.
+```{r}
+
+```
+
+Fit a logistic regression model.
+```{r}
+
+```
+
+View the results.
+```{r}
+
+```
+
+Score the model.
+```{r}
+
+```
