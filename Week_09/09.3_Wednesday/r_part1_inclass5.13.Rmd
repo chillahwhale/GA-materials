@@ -1,0 +1,187 @@
+---
+title: "R Lesson Part 1"
+author: "Noelle Brown"
+output: html_document
+---
+# Intro to R
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Reading in Data
+
+Read in the `train_titanic.csv` file.
+```{r}
+titanic <- read.csv('~/Documents/GA/DSI/Lessons/R/data/train_titanic.csv')
+head(titanic)
+```
+
+## EDA
+
+How many rows and columns are in this dataset?
+```{r}
+dim(titanic)
+# View(titanic)
+```
+
+View just the first 10 items in the Age column.
+```{r}
+head(titanic$Age, 10)
+```
+
+How many missing values are there?
+```{r}
+# is.null(titanic)
+# is.null(titanic$Age)
+# which(is.na(titanic$Age))
+# 1 = rows, 2 = cols
+# apply(X, margin, function)
+apply(is.na(titanic), 2, which)
+```
+Drop Missings.
+```{r}
+titanic_new <- na.omit(titanic)
+```
+
+```{Python}
+my_list = [1, 2, 3, 4]
+
+print(my_list[-1])
+```
+
+Plot a histogram to see the distribution of the Fare column.
+```{r}
+hist(titanic_new$Fare,
+     main = 'Distribution of Fare',
+     xlab = 'Fare',
+     col = 'blue')
+```
+
+Plot a scatterplot of the Fare vs. Age columns.
+```{r}
+plot(x = titanic_new$Fare,
+     y = titanic_new$Age,
+     main = 'Fare vs. Age',
+     xlab = 'Fare',
+     ylab = 'Age')
+```
+
+Display summary statistics of the titanic data.
+```{r}
+summary(titanic_new)
+```
+
+How many females and males were aboard the Titanic? Plot the
+frequency of females and males. Be sure to give an accurate title and label the axes.
+```{r}
+female <- sum(titanic_new$Sex == 'female')
+male <- sum(titanic_new$Sex == 'male')
+
+fm <- c(female, male)
+barplot(fm,
+        main = 'Frequency of females vs. males',
+        xlab = 'Sex',
+        ylab = 'Frequency',
+        names.arg = c('Females', 'Males'),
+        col = c('red', 'blue'))
+```
+
+Use one apply function to output the means of Age, Fare, and Survival. Make sure the output is a real number for all three means.
+```{r}
+afs <- data.frame(titanic_new$Age, titanic_new$Fare,
+                  titanic_new$Survived)
+# apply(X, margin, function)
+# 1 is rows, 2 is cols
+apply(afs, 2, mean, na.rm=TRUE)
+```
+
+Display the column names of the titanic dataframe.
+```{r}
+colnames(titanic_new)
+# colnames(titanic_new) <- c('x', 's', ...)
+```
+
+Display the last 5 rows of the titanic dataframe.
+```{r}
+tail(titanic_new, 5)
+```
+
+
+Function Building: Imagine you have another dataset with the same column names, so you want to create a helper function that you can analyze this dataset and the next. 
+ - Create objects for the median Age and the minimum and maximum fares. Make sure to ignore missing values.
+- Create a dataframe called report that consists of the above values.
+- Change the column names of this dataframe to MedianAge, MinFare, and
+MaxFare
+- Round the results to 2 digits.
+- Finally, run the function on the titanic data to show the output.
+```{r}
+helper_func <- function(df) {
+  medage <- median(df$Age[!is.na(df$Age)])
+  minfare <- min(df$Fare[!is.na(df$Fare)])
+  maxfare <- max(df$Fare[!is.na(df$Fare)])
+  df <- data.frame(medage, minfare, maxfare)
+  colnames(df) <- c('MedianAge', 'MinFare', 'MaxFare')
+  rounded <- round(df, digits = 2)
+  return(rounded)
+}
+helper_func(titanic_new)
+```
+
+## Modeling
+
+Remove unnecessary columns.
+```{r}
+titanic_data <- titanic_new[ , c('Pclass', 'Sex',
+                                 'Age', 'SibSp',
+                                 'Parch', 'Fare',
+                                 'Embarked')]
+```
+
+One-Hot Encode Sex and Embarked columns.
+```{r}
+# install.packages('caret')
+library(caret)
+# y ~ X
+dmy <- dummyVars(" ~ .", data = titanic_data)
+X <- data.frame(predict(dmy, newdata = titanic_data))
+head(X)
+
+y <- titanic_new[ , 'Survived']
+```
+
+Split into training & testing sets.
+```{r}
+set.seed(13)
+sample <- sample.int(n = nrow(X), size = floor(.8*nrow(X)), replace = FALSE)
+Xtrain <- X[sample, ]
+Xtest <- X[-sample, ]
+ytrain <- y[sample]
+ytest <- y[-sample]
+```
+
+Fit a logistic regression model.
+```{r}
+# glm(y~X, family=distribution(link=linkfunction), data)
+# binomial distribution
+# link = logit
+model <- glm(ytrain ~ ., family = binomial(link='logit'),
+             data = Xtrain)
+```
+
+View the results.
+```{r}
+summary(model)
+```
+
+Score the model.
+```{r}
+# install.packages('InformationValue')
+library(InformationValue)
+
+preds <- predict(model, newdata = Xtest, type = 'response')
+optCutOff <- optimalCutoff(ytest, preds)[1]
+misClassError(ytest, preds, threshold = optCutOff)
+confusionMatrix(ytest, preds, threshold = optCutOff)
+plotROC(ytest, preds)
+```
